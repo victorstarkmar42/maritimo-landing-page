@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilo_SLIDE.css" />
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+    <link href="https://fonts.googleapis.com/css?family=Abel|Oswald" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/66f5e943e2.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+    <script src="jquery.tinycarousel.js"></script>
+    <script src="wow.min.js"></script>
+
+    <!--Efecto scroll de regreso-->
+    <script src="jquery.scrollUp.js"></script>
+    <script>
+        $(function () {
+            $.scrollUp({
+                scrollImg: true
+            });
+        });
+    </script>
+    
+    <title>Examen</title>
+    </head>
+    
+    <body>
+
+    
+        <header class="header2 ancho">
+            <figure><a href="#"><img src="imagenes/logo.PNG" alt=""></a></figure>
+            <nav class="header2-nav">
+                <div class="header2-nav-icons">
+                    <i class="icono-location fas fa-map-marker-alt  fa-2x"></i>
+                </div>
+                <ul>
+                    <li>
+                        <p>Tungmahamek, Sathorn,</p>
+                    </li>
+                    <li>
+                        <p>Bangkok, Thailand 10120</p>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="header2-nav">
+                <div class="header2-nav-icons">
+                    <i class="icono-tel fas fa-phone-alt fa-2x"></i>
+                </div>
+                <ul>
+                    <li>
+                        <p>+123 456 7890</p>
+                    </li>
+                    <li>
+                        <p>+123 456 7891</p>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="header2-nav">
+                <div class="header2-nav-icons">
+                    <i class="icono-clock far fa-clock  fa-2x"></i>
+                </div>
+                <ul>
+                    <li>
+                        <p>9:00 - 18:00</p>
+                    </li>
+                    <li>
+                        <p>Monday - Friday</p>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <header class="header3">
+            <nav class="header3-nav ancho">
+                <a class="cuadrado" href="#"><i id="iconomenu" class="fas fa-bars fa-2x"></i></a>
+                <ul id="menu" class="contenedormenu">
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">SERVICIOS</a></li>
+                    <li><a href="#">OFERTAS</a></li>
+                    <li><a href="#">BENEFICIOS</a></li>
+                    <li><a href="#">TODOS LOS BLOQUES</a></li>
+                    <li><a href="#">CONTACTANOS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Funcion js para el menu responsivo-->
+        <script>
+            $("#iconomenu").click(function () {
+                $("#menu").slideToggle();
+            });
+        </script>
+    
+    
+        <!--Script Slider-->
+        <script>
+            $(function () {
+                $("#slider4").responsiveSlides({
+                    auto: false,
+                    pager: false,
+                    nav: true,
+                    speed: 500,
+                    namespace: "callbacks",
+                });
+            });
+        </script>
+        <!--Primera sección del Slider-->
+        <section class="seccion1" id="contenedorslide">
+            <div class="callbacks_container">
+                <ul class="rslides" id="slider4">
+                    <li class="cajatexto">
+                        <img src="imagesSlide/slide1.jpg" alt="" />
+                        <div class="caption">
+                            <h2 class="animate__animated animate__backInLeft animate__delay-2s">BEST TRASPORTATION
+                            </h2>
+                            <p class="animate__animated animate__backInRight animate__delay-4s">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                            </p>
+                            <a href="#"
+                                class="boton hvr-bounce-to-bottom animate__animated animate__bounceInUp animate__delay-5s">READ
+                                MORE</a>
+                        </div>
+                    </li>
+                    <li class="cajatexto">
+                        <img src="imagesSlide/slide2.jpg" alt="" />
+                    </li>
+                    <li class="cajatexto">
+                        <img src="imagesSlide/slide3.jpg" alt="" />
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
+    
+        <!--Segunda sección-->
+        <section class="seccion2 ancho">
+            <div class="seccion2-feautures">
+                <h2>The Main Features</h2>
+                <p>Gravitas website template perfectly fits any kind of business on the Web. No matter who you are, you are
+                    able to make
+                    a remarkable website for your niche with no programming and design skills very fast by taking advantage
+                    of this
+                    responsive and feature-rich web theme.</p>
+                <p>This template is truly excellent so far. Each feature of Gravitas is the priceless benefit for its owner
+                    to make,
+                    edit and launch any website with own hands in hours, not in days.</p>
+                <h3>Our Vision</h3>
+                <p>Our company stands for quality and satisfaction guarantee to make your business grow as soon as possible.
+                </p>
+                <h3>Our Mission</h3>
+                <p>We do our best to serve you with high-end business solutions that could help you stand out among
+                    competitors
+                    effortlessly.</p>
+                <h3>Our Strategy</h3>
+                <p>We know how important it is for you to maintain your schedule, that’s why we do everything to fit it. Our
+                    professional team is always online to help you with any business-related issue.</p>
+            </div>
+            <div class="Imagen1">
+                <figure class="banner">
+                    <a href="#"><img src="imagenes/Imagen1.jpg" alt=""></a>
+                    <div class="info">
+                        <h3>The Main Features</h3>
+                        <p>Work description here</p>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                </figure>
+            </div>
+        </section>
+    
+        <!--Tercera sección-->
+        <section class="seccion3">
+            <div id="contenedoryoutube">
+                <iframe src="https://www.youtube.com/embed/MOVftnYYXjc" frameborder="0" allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    
+        <!--Cuarta sección-->
+        <section class="seccion4">
+            <section id="galeria" class="fond ancho">
+                <div class="contenedor-figure">
+                    <figure>
+                        <a class="fancybox" rel="gallery1" href="imagenes/foto1.jpg" title="FOTO1">
+                            <img src="imagenes/foto1.jpg" alt="" /></a>
+                        <a class="fancybox" rel="gallery1" href="imagenes/foto2.jpg" title="FOTO2">
+                            <img src="imagenes/foto2.jpg" alt="" /></a>
+                    </figure>
+                    <figure>
+                        <a class="fancybox" rel="gallery1" href="imagenes/foto3.jpg" title="FOTO3">
+                            <img src="imagenes/foto3.jpg" alt="" /></a>
+                        <a class="fancybox" rel="gallery1" href="imagenes/foto4.jpg" title="FOTO4">
+                            <img src="imagenes/foto4.jpg" alt="" /></a>
+                    </figure>
+                </div>
+                <div class="contenedor">
+                    <h2 class="animate__animated animate__backInLeft animate__delay-2s">MARITIME PORTS GALLERY</h2>
+                    <p class="animate__animated animate__backInRight animate__delay-4s">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                    </p>
+                    <div class="caption">
+                        <a href="#"
+                            class="boton hvr-bounce-to-bottom wow animate__animated animate__backInDown">READ
+                            MORE</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+    
+        <!--Quinta sección-->
+        <section class="section5-acordeon ancho">
+            <div class="questions-acordeon">
+                <h2>Our Benefits</h2>
+                <div class="content-acordeon">
+                    <div id="acordeon" class="acordeon">
+                        <div class="acordeon-titulo">
+                            <i id="icono" class="mas fas fa-plus-square"></i>
+                            <h3>Quality service at affordable price.</h3>
+                        </div>
+                        <article class="informacion">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam quasi doloremque
+                                impedit
+                                nisi dignissimos,
+                                consequuntur neque expedita vitae provident cupiditate corrupti asperiores error quas quos
+                                accusantium adipisci
+                                blanditiis quam. Officia ipsa dolor laborum veniam, a, porro labore illo sit itaque, ut
+                                optio
+                                voluptate vitae
+                                magnam. Error porro ea eveniet.
+                            </p>
+                        </article>
+                    </div>
+                    <div id="acordeon" class="acordeon">
+                        <div class="acordeon-titulo">
+                            <i id="icono" class="mas fas fa-plus-square"></i>
+                            <h3>100% satisfied customers.</h3>
+                        </div>
+                        <article class="informacion">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam quasi doloremque
+                                impedit
+                                nisi dignissimos,
+                                consequuntur neque expedita vitae provident cupiditate corrupti asperiores error quas quos
+                                accusantium adipisci
+                                blanditiis quam. Officia ipsa dolor laborum veniam, a, porro labore illo sit itaque, ut
+                                optio
+                                voluptate vitae
+                                magnam. Error porro ea eveniet.
+                            </p>
+                        </article>
+                    </div>
+                    <div id="acordeon" class="acordeon">
+                        <div class="acordeon-titulo">
+                            <i id="icono" class="mas fas fa-plus-square"></i>
+                            <h3>Multiple locations.</h3>
+                        </div>
+                        <article class="informacion">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam quasi doloremque
+                                impedit
+                                nisi dignissimos,
+                                consequuntur neque expedita vitae provident cupiditate corrupti asperiores error quas quos
+                                accusantium adipisci
+                                blanditiis quam. Officia ipsa dolor laborum veniam, a, porro labore illo sit itaque, ut
+                                optio
+                                voluptate vitae
+                                magnam. Error porro ea eveniet.
+                            </p>
+                        </article>
+                    </div>
+                    <div id="acordeon" class="acordeon">
+                        <div class="acordeon-titulo">
+                            <i id="icono" class="mas fas fa-plus-square"></i>
+                            <h3>We will find the best solution for you</h3>
+                        </div>
+                        <article class="informacion">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam quasi doloremque
+                                impedit
+                                nisi dignissimos,
+                                consequuntur neque expedita vitae provident cupiditate corrupti asperiores error quas quos
+                                accusantium adipisci
+                                blanditiis quam. Officia ipsa dolor laborum veniam, a, porro labore illo sit itaque, ut
+                                optio
+                                voluptate vitae
+                                magnam. Error porro ea eveniet.
+                            </p>
+                        </article>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <!--División-->
+            <div class="skills">
+                <div class="content-skills">
+                    <article>
+                        <div class="article-skills">
+                            <h3>PROFIT GROWTH PER YEAR</h3>
+                            <p>90%</p>
+                        </div>
+                        <div class="barra_porcentaje_11">
+                            <div class="barra_porcentaje_1"></div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="article-skills">
+                            <h3>DELIVERY RATE</h3>
+                            <p>65%</p>
+                        </div>
+                        <div class="barra_porcentaje_22">
+                            <div class="barra_porcentaje_2"></div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="article-skills">
+                            <h3>TRANSPORTS DONE</h3>
+                            <p>100%</p>
+                        </div>
+                        <div class="barra_porcentaje_33">
+                            <div class="barra_porcentaje_3"></div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="article-skills">
+                            <h3>TRANSPORTS NOT DONE</h3>
+                            <p>0%</p>
+                        </div>
+                        <div class="barra_porcentaje_44">
+                            <div class="barra_porcentaje_4"></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    
+        <script>
+            $('.acordeon-titulo').click(function () {
+                var t = $(this);
+                var icon = t.children('#icono');
+                var tp = t.next();
+                tp.slideToggle();
+                icon.toggleClass('fa-plus-square fa-minus-square');
+            });
+        </script>
+    
+    
+        <!--Sexta sección-->
+    
+        <script>
+            $(document).ready(function () {
+                $("#slider1").tinycarousel();
+            });
+        </script>
+        <section class="seccion6 ancho">
+            <div class="ancho" id="slider1">
+                <div class="cont_flechas">
+                    <article class="informacion">
+                        <h2>OUR TEAM</h2>
+                        <h3>PROFESSIONAL MARITIME TRANSPORT</h3>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, reiciendis?</p>
+                        <div class="flechas">
+                            <a class="buttons prev" href="#">
+                                <i class="fas fa-arrow-left"></i>
+                            </a>
+                            <a class="buttons next" href="#">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+    
+                <div class="viewport">
+                    <div class="overview">
+                        <article class="cards">
+                            <figure class="banner">
+                                <img src="imagenesCarrusel/foto1.jpg" alt="" />
+                                <div class="info">
+                                    <h3>COLLABORATOR OF OUR WORK TEAM</h3>
+                                    <p>Work description here</p>
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </div>
+                            </figure>
+                            <h2>John Tuff</h2>
+                            <p>The first officer</p>
+                        </article>
+                        <article class="cards">
+                            <figure class="banner">
+                                <img src="imagenesCarrusel/foto2.jpg" alt="" />
+                                <div class="info">
+                                    <h3>COLLABORATOR OF OUR WORK TEAM</h3>
+                                    <p>Work description here</p>
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </div>
+                            </figure>
+                            <h2>Frank McMillan</h2>
+                            <p>The First Officer</p>
+                        </article>
+                        <article class="cards">
+                            <figure class="banner">
+                                <img src="imagenesCarrusel/foto3.jpg" alt="" />
+                                <div class="info">
+                                    <h3>COLLABORATOR OF OUR WORK TEAM</h3>
+                                    <p>Work description here</p>
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </div>
+                            </figure>
+                            <h2>John Smith</h2>
+                            <p>The Second Officer</p>
+                        </article>
+                        <article class="cards">
+                            <figure class="banner">
+                                <img src="imagenesCarrusel/foto4.jpg" alt="" />
+                                <div class="info">
+                                    <h3>COLLABORATOR OF OUR WORK TEAM</h3>
+                                    <p>Work description here</p>
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </div>
+                            </figure>
+                            <h2>Ben Wilson</h2>
+                            <p>Machine Room or Department</p>
+                        </article>
+                        <article class="cards">
+                            <figure class="banner">
+                                <img src="imagenesCarrusel/foto5.jpg" alt="" />
+                                <div class="info">
+                                    <h3>COLLABORATOR OF OUR WORK TEAM</h3>
+                                    <p>Work description here</p>
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </div>
+                            </figure>
+                            <h2>Ben Fitzgerald</h2>
+                            <p>Radiocommunication Section</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!--Septima sección-->
+        <section class="seccion7 ancho">
+            <section class="parallaxs">
+                <div class="filtro"></div>
+                <h2>Comprehensive Shipping Solutions</h2>
+                <a href="#" class="btn_negro wow animate__animated animate__backInDown">READ MORE</a>
+            </section>
+        </section>
+    
+        <!--Octava sección-->
+        <section class="seccion8 ancho">
+            <article class="article1-informacion">
+                <div class="informacion">
+                    <h5>Our Team</h5>
+                    <h1>A Dedicated Team of Expert</h1>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae aut animi architecto dolores
+                        illum.</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati ea sunt architecto quasi, magnam,
+                        consectetur et iste nulla, ex ipsam sequi sint facilis veniam iusto eos. Ratione ipsam odit quis
+                        dicta sint velit corrupti, nostrum obcaecati voluptate labore ea quod iure debitis nemo consequatur!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat labore commodi non beatae
+                        accusantium, quod dignissimos ipsam cum</p>
+                    <div class="botones">
+                        <a class="btn wow animate__animated animate__backInDown" href="#">Learn More</a>
+                        <a class="btn2 wow animate__animated animate__backInDown" href="#">View All Team</a>
+                    </div>
+                </div>
+            </article>
+    
+            <article class="article2-imagenes">
+                <div class="galeria">
+                    <img src="imagenes/mujer.png" alt="">
+                    <h3 class="nombre">Jessica Cooper</h3>
+                    <p>Esthetician</p>
+                    <div class="redes">
+                        <i class="fb fab fa-facebook-f"></i>
+                        <i class="tw fab fa-twitter"></i>
+                        <i class="pin fab fa-pinterest"></i>
+                    </div>
+                    <a id="Btn3" class="wow animate__animated animate__backInDown">GET IN TOUCH</a>
+                </div>
+                <div class="galeria">
+                    <img src="imagenes/hombre.jpg" alt="">
+                    <h3 class="nombre">Robert Wagner</h3>
+                    <p>Hairdresser</p>
+                    <div class="redes">
+                        <i class="fb fab fa-facebook-f"></i>
+                        <i class="tw fab fa-twitter"></i>
+                        <i class="pin fab fa-pinterest"></i>
+                    </div>
+                    <a id="Btn4" class="wow animate__animated animate__backInDown">GET IN TOUCH</a>
+                </div>
+            </article>
+        </section>
+    
+        <!-- Script modal -->
+        <section id="modal" class="contenidomodal">
+            <div class="estructuramodal">
+                <div class="titulo">
+                    <i id="cerrarbtn" class="rojo fas fa-times-circle"></i>
+                </div>
+                <div class="">
+                    <h2>Contact Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet consequatur </p>
+                    <form class="formulariobody">
+                        <input type="text" id="fname" name="fname" placeholder="Ingrese su nombre">
+                        <input type="email" id="email" name="email" placeholder="Ingrese su email">
+                        <input type="text" id="txt" name="texto" placeholder="Ingrese su mensaje">
+                        <input type="submit" id="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- funcion modal -->
+        <script>
+            var mostrarmodal = document.getElementById("modal");
+            var cerrarmodal = document.getElementById("cerrarbtn");
+            var btnejecutar = document.getElementById("Btn3");
+            var btnejecutar2 = document.getElementById("Btn4");
+
+            btnejecutar.onclick = function () {
+                mostrarmodal.style.display = "block";
+            }
+
+            btnejecutar2.onclick = function () {
+                mostrarmodal.style.display = "block";
+            }
+
+            cerrarmodal.onclick = function () {
+                mostrarmodal.style.display = "none";
+            }
+
+            window.onclick = function (event) {
+                if (event.target == mostrarmodal) {
+                    mostrarmodal.style.display = "none";
+                }
+            };
+        </script>
+        <!-- funcion modal -->
+    
+        <section class="contenedor_contact ancho">
+            <div id="formulario_Uno">
+                <div class="formulario_Ayuda">
+                    <h2>SEND US A MESSAGE</h2>
+                    <br>
+                    <form action="raw_enviar_mailer.php" method="POST" class="">
+    
+                        <input class="entrada" name="nombre" type="text" placeholder="Name*" required>
+                        <input class="entrada" name="correo" type="email" id="email" placeholder="Email*" required>
+                        <textarea class="entrada" name="mensaje" id="" placeholder="Message" cols="30" rows="10"
+                            required></textarea>
+                        <button type="submit" class="btn_send"> SEND</button>
+                    </form>
+                </div>
+            </div>
+            <div id="fondo" class="fondo">
+                <img src="imagenes/Board.jpg" alt="">
+            </div>
+            </div>
+        </section>
+    
+        <footer class="barra_negra">
+            <h3>MARITIMO</h3>
+            <P>DESAROLLLO DE FRONTEND</P>
+            <P>9ST</P>
+        </footer>
+
+        <script>
+            new WOW().init();
+        </script>
+    </body>
+    
+    </html>
